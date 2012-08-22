@@ -13,6 +13,7 @@
  * Tools to handle and manipulate URLS
  * @namespace
  * @memberOf tst
+ * @version 1.1
  * @return {Null} null.
  */
 tst.page = function() {
