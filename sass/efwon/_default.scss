@@ -1,0 +1,57 @@
+/*
+ * Efwon-specific code
+ */
+
+
+
+$ef_headerHeight: 40px;
+$ef_footerHeight: $gp_baseFontSize;
+
+
+.ef_header {
+	@include gp_linearGradient(lighten($gp_colorMain, 55%), lighten($gp_colorMain, 50%));
+	position: absolute;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid $gp_colorMain;
+	padding: $gp_gridSpacing 0;
+	height: $ef_headerHeight;
+
+	.ef_pageTitle {
+		font-family: Consolas, sans-serif;
+		font-size: $ef_headerHeight;
+		line-height: $ef_headerHeight;
+	}
+}
+
+
+.ef_main {
+	margin: 0 auto;
+	width: $gp_desktop;
+}
+
+
+
+.ef_nav {
+	float: right;
+	width: 20%;
+	min-width: 200px;
+}
+
+
+
+html,
+body {
+	height: 100%;
+}
+.ef_contentContainer {
+	@include gp_boxSizing(border-box);
+	min-height: 100%;
+	padding-top: $ef_headerHeight + ($gp_gridSpacing * 4);
+	padding-bottom: $ef_footerHeight + ($gp_gridSpacing * 2);
+}
+
+.ef_footer {
+	margin-top: -($ef_footerHeight + $gp_gridSpacing);
+	height: $ef_footerHeight;
+}

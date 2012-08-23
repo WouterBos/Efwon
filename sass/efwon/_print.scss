@@ -1,0 +1,13 @@
+/*
+ * Styling for print
+ *
+ * Makes a page built upon a grid fit for print.
+ */
+
+
+
+@media print {
+	.ef_nav {
+		display: none;
+	}
+}

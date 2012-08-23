@@ -1,22 +1,21 @@
 @charset "UTF-8";
 
 /* BASE */
-@import "Graphite/_values";
-@import "Graphite/_functions";
-@import "Graphite/_reset";
+@import "graphite/_values";
+@import "graphite/_functions";
+@import "graphite/_reset";
 
 
 
 /* TEXT STYLING */
-@import "Graphite/_text";
-@import "Graphite/_text-block";
+@import "graphite/_text";
+@import "graphite/_text-block";
 
 
 
 /* GRIDS */
-@import "Graphite/_grid";
-@import "Graphite/_grid-print";
+@import "graphite/_grid";
 // Disabled, variables in media queries only work in Sass 3.2+
-// @import "Graphite/_grid-mobile"; 
-@import "Graphite/_grid-fixed-functions";
-@import "Graphite/_grid-fixed";
+// @import "graphite/_grid-mobile"; 
+@import "efwon/_default";
+@import "efwon/_print";
